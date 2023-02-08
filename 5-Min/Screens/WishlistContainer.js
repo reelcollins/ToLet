@@ -4,65 +4,6 @@ import axios from 'axios';
 import { useNavigation } from '@react-navigation/native';
 
 
-{/* 
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
-
-export default function Wishlist(props) {
-  const [wishlist, setWishlist] = useState([]);
-
-  useEffect(() => {
-    axios.get('http://localhost:8000/wishlists/')
-      .then(response => {
-        const wishlistIds = response.data;
-        // Fetch the full details of each house using the ids
-        Promise.all(wishlistIds.map(id => axios.get(`http://localhost:8000/houses/${id}`)))
-          .then(results => {
-            const houses = results.map(result => result.data);
-            setWishlist(houses);
-          })
-          .catch(error => {
-            console.error(error);
-          });
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  }, []);
-
-  return (
-    <View style={styles.container}>
-      {wishlist.map(house => (
-        <View key={house.id} style={styles.houseContainer}>
-          <Image
-            style={styles.image}
-            source={{uri: house.imageUrl}}
-            resizeMode="cover"
-          />
-          <Text style={styles.price}>{house.size}</Text> 
-          <Text style={styles.price}>{house.location}</Text>
-          <Text style={styles.price}>Price: Ksh.{house.price}</Text>
-          <Text style={styles.price}>Contacts:{house.contact}</Text>
-          <Text style={styles.description}>Apartment: {house.apartment}</Text>
-          <Text style={styles.description}>Floor: {house.floor}</Text>
-          <Text style={styles.description}>House Number: {house.housenumber}</Text>
-          <TouchableOpacity style={styles.button} onPress={() => navigate('Map', { location: house.location })}>
-            <Text style={styles.buttonText}>View on Map</Text>
-          </TouchableOpacity>
-        </View>
-      ))}
-    </View>
-  );
-}
-
-
-
-*/}
-
-
-  
-
 export default function WishlistContainer() {
   const [houses, setHouses] = useState([]);
   const navigation = useNavigation();

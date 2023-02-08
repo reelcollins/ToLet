@@ -14,20 +14,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-// const isLoggedIn = false;
-
-// function HomeStack() {
-//   return (
-//     <Stack.Navigator>
-//       <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
-//       <Stack.Screen name="Wishlist" component={Wishlist} options={{ headerShown: false }}/>
-//       {/* <Stack.Screen name="Upload" component={Upload} options={{ headerShown: false }}/> */}
-//       {/* <Stack.Screen name="SignIn" component={SignIn} /> */}
-//       {/* <Stack.Screen name="Settings" component={LandlordSettings} /> */}
-//     </Stack.Navigator>
-//   );
-// }
-
 export default function App() {
   return (
     <NavigationContainer>
