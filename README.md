@@ -1,2 +1,2 @@
 # ToLet
-A rental house unit search
+Rental house unit hunting
